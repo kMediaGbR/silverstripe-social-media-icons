@@ -12,6 +12,7 @@ class SiteConfigExtension extends DataExtension
 {
     private static $db = [
         'FacebookLink' => 'Varchar',
+        'InstagramLink' => 'Varchar',
         'TwitterLink' => 'Varchar',
         'YouTubeLink' => 'Varchar',
         'FooterContent' => 'Text'
@@ -24,10 +25,11 @@ class SiteConfigExtension extends DataExtension
 
     public function updateCMSFields(FieldList $fields)
     {
-        $fields->addFieldsToTab('Root.Social', array (
-            TextField::create('FacebookLink','Facebook'),
-            TextField::create('TwitterLink','Twitter'),
-            TextField::create('YouTubeLink','YouTube')
+        $fields->addFieldsToTab('Root.Social', array(
+            TextField::create('FacebookLink', 'Facebook'),
+            TextField::create('InstagramLink', 'Twitter'),
+            TextField::create('TwitterLink', 'Twitter'),
+            TextField::create('YouTubeLink', 'YouTube')
         ));
         $fields->addFieldsToTab('Root.Main', [TextareaField::create('FooterContent', 'Content for footer')]);
     }

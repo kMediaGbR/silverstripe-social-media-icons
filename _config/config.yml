@@ -1,0 +1,7 @@
+---
+Name: socialmediaicons
+---
+SilverStripe\SiteConfig\SiteConfig:
+  extensions:
+    - Kmedia\SocialMediaIcons\SiteConfigExtension
+---

@@ -27,7 +27,7 @@ class SiteConfigExtension extends DataExtension
     {
         $fields->addFieldsToTab('Root.Social', array(
             TextField::create('FacebookLink', 'Facebook'),
-            TextField::create('InstagramLink', 'Twitter'),
+            TextField::create('InstagramLink', 'Instagram'),
             TextField::create('TwitterLink', 'Twitter'),
             TextField::create('YouTubeLink', 'YouTube')
         ));

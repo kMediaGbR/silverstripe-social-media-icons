@@ -1,3 +1,1 @@
-svg path {
-    fill: green;
-}
+svg.facebook path,svg.instagram path,svg.twitter path,svg.youtube path{fill:currentColor}
